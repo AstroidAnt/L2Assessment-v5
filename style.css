@@ -1,0 +1,50 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .one {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-image: url(imageOne.jpg);
+   background-size: cover;
+   background-position: center;
+ }
+
+ .footer {
+   background-color: #1d1616;
+   color: #ded9d9;
+   font-size: 20px;
+   padding: 80px;
+   text-align: center;
+   font-family: 'Ysabeau SC', sans-serif;
+ }
+
+ .two {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-image: url(imageTwo.jpg);
+   background-size: cover;
+   background-position: center;
+ }
+
+ .three {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-image: url(imageThree.jpg);
+   background-size: cover;
+   background-position: center;
+   }
