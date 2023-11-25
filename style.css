@@ -16,6 +16,14 @@
    background-position: center;
  }
 
+ .footergradient {
+   width: 100%;
+   padding: 40px;
+   position: absolute;
+   bottom: 0;
+   background: linear-gradient(180deg, rgba(000, 0, 0, 0), #1d1616);
+ }
+
  .footer {
    background-color: #1d1616;
    color: #ded9d9;
@@ -48,3 +56,11 @@
    background-size: cover;
    background-position: center;
    }
+
+ .upsidedownfootergradient {
+   width: 100%;
+   padding: 30px;
+   position: relative;
+   top: 0;
+   background: linear-gradient(360deg, rgba(000, 0, 0, 0), #1d1616);
+ }
