@@ -68,9 +68,13 @@
 
 /* Banner Component */
 h1 {
-  color: #ded9d9;
-  margin: 230px auto;
   font-size: 80px;
+  letter-spacing: 2px; height: 400px;
   text-align: center;
-  letter-spacing: 2px;
+  color: #000000;
+  width: 70%;
+  margin: auto;
+  margin-top: 220px;
+  background: rgba(230, 230, 230, 0.4);
+  padding: 100px;
 }
