@@ -4,6 +4,7 @@
    box-sizing: border-box;
  }
 
+/* Background Component */
  .one {
    position: relative;
    width: 100%;
@@ -64,3 +65,12 @@
    top: 0;
    background: linear-gradient(360deg, rgba(000, 0, 0, 0), #1d1616);
  }
+
+/* Banner Component */
+h1 {
+  color: #ded9d9;
+  margin: 230px auto;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 2px;
+}
