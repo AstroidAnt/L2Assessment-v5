@@ -76,7 +76,7 @@ h1 {
 }
 
 /* Navigation Component */
-nav {
+.navigation {
   position: relative;
   top: 0;
   width: 100%;
@@ -84,10 +84,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ded9d9;
 }
 
-nav .home {
+.home {
   position: relative;
   color: #6a7999;
   font-size: 50px;
@@ -98,7 +97,7 @@ nav .home {
   display: inline-block;
 }
 
-nav .navigation a {
+.nav  {
   color: #6a7999;
   text-decoration: none;
   font-weight: 500;
@@ -109,7 +108,7 @@ nav .navigation a {
   transition-property: background;
 }
 
-nav a {
+.navigation  a{
   background-image: linear-gradient(to right,
       #6a7999,
       #6a7999 50%,
@@ -124,7 +123,7 @@ nav a {
   transition: all 0.3s ease-in-out;
 }
 
-nav a:before {
+.navigation a:before {
   content: '';
   background: #6a7999;
   display: block;
@@ -136,11 +135,11 @@ nav a:before {
   transition: all 0.3s ease-in-out;
 }
 
-nav a:hover {
+.navigation a:hover {
   background-position: 0;
 }
 
-nav a:hover::before {
+.navigation a:hover::before {
   width: 100%;
 }
 
