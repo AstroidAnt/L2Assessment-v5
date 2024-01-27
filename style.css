@@ -73,7 +73,7 @@ h1 {
   font-size: 80px;
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Navigation Component */
@@ -86,7 +86,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   background-color: #ded9d9;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Crimson Text', serif;
 }
 
 .home {
