@@ -31,7 +31,7 @@
    font-size: 20px;
    padding: 80px;
    text-align: center;
-   font-family: 'Ysabeau SC', sans-serif;
+   font-family: 'Cormorant Garamond', serif;
  }
 
  .two {
@@ -73,6 +73,7 @@ h1 {
   font-size: 80px;
   text-align: center;
   letter-spacing: 2px;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 /* Navigation Component */
@@ -84,6 +85,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ded9d9;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .home {
