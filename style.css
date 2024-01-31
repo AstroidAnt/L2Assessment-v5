@@ -155,6 +155,8 @@ nav a:hover::before {
   width: 100%;
 }
 
+/* Sticky Navigation */
+
 .sticky {
   position: fixed;
   top: 0;
