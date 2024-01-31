@@ -15,6 +15,7 @@
    background-image: url(imageOne.jpg);
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
  }
 
  .footergradient {
@@ -31,19 +32,6 @@
    font-size: 20px;
    padding: 80px;
    text-align: center;
-   font-family: 'Cormorant Garamond', serif;
- }
-
- .two {
-   position: relative;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   background-image: url(imageTwo.jpg);
-   background-size: cover;
-   background-position: center;
  }
 
  .three {
@@ -53,9 +41,23 @@
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
+   background-image: url(imageTwo.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+ }
+
+ .five {
+   position: relative;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
    background-image: url(imageThree.jpg);
    background-size: cover;
    background-position: center;
+   background-attachment: fixed;
    }
 
  .upsidedownfootergradient {
@@ -73,20 +75,19 @@ h1 {
   font-size: 80px;
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Raleway', sans-serif;
+  font-family: junicode-bold;
 }
 
 /* Navigation Component */
-.navigation {
-  position: relative;
-  top: 0;
+
+nav {
   width: 100%;
   padding: 30px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ded9d9;
-  font-family: 'Crimson Text', serif;
+  font-family: 'amaranthregular';
 }
 
 .home {
@@ -111,7 +112,15 @@ h1 {
   transition-property: background;
 }
 
-.navigation  a{
+.lakewai {
+  padding-left: 40px;
+}
+
+.about {
+  padding-left: 40px;
+}
+
+nav a{
   background-image: linear-gradient(to right,
       #6a7999,
       #6a7999 50%,
@@ -126,7 +135,7 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.navigation a:before {
+nav a:before {
   content: '';
   background: #6a7999;
   display: block;
@@ -138,15 +147,17 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.navigation a:hover {
+nav a:hover {
   background-position: 0;
 }
 
-.navigation a:hover::before {
+nav a:hover::before {
   width: 100%;
 }
 
-html {
-  scroll-behavior: smooth;
- }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
