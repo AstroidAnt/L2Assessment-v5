@@ -32,6 +32,7 @@
    font-size: 20px;
    padding: 80px;
    text-align: center;
+   font-family: 'Roboto', sans-serif;
  }
 
  .three {
@@ -71,11 +72,11 @@
 /* Banner Component */
 h1 {
   color: #ded9d9;
-  margin: 230px auto;
+  margin: 270px auto;
   font-size: 80px;
   text-align: center;
   letter-spacing: 2px;
-  font-family: junicode-bold;
+  font-family: 'Playfair Display SC', serif;
 }
 
 /* Navigation Component */
@@ -87,7 +88,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #ded9d9;
-  font-family: 'amaranthregular';
+  font-family: 'Roboto', sans-serif;
 }
 
 .home {
