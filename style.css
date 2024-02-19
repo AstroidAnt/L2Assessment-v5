@@ -12,7 +12,7 @@
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   background-image: url(imageOne.jpg);
+   background-image: url(images/imageOne.jpg);
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -29,10 +29,9 @@
  .footer {
    background-color: #1d1616;
    color: #ded9d9;
-   font-size: 20px;
    padding: 80px;
    text-align: center;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Playfair Display', serif;
  }
 
  .three {
@@ -42,11 +41,21 @@
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   background-image: url(imageTwo.jpg);
+   background-image: url(images/imageTwo.jpg);
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
  }
+
+#fourpara {
+  column-count: 2;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
+}
 
  .five {
    position: relative;
@@ -55,7 +64,7 @@
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   background-image: url(imageThree.jpg);
+   background-image: url(images/imageThree.jpg);
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -114,11 +123,15 @@ nav {
 }
 
 .lakewai {
-  padding-left: 40px;
+  margin-left: 40px;
 }
 
 .about {
-  padding-left: 40px;
+  margin-left: 40px;
+}
+
+.biodivercity {
+  margin-left: 40px;
 }
 
 nav a{
@@ -163,4 +176,29 @@ nav a:hover::before {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+p {
+  font-size: 27px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+h3 {
+  text-align: left;
+  padding: 10px;
+  font-size: 30px;
+  font-family: 'Playfair Display SC', serif;
+}
+
+#headerimg {
+  padding-top: 210px;
+  display: block;
+  margin: auto;
+  width: 72%;
 }
