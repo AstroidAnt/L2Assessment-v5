@@ -12,3 +12,8 @@ function myFunction() {
     nav.classList.remove("sticky");
   }
 }
+
+// responsive Navigation
+$(".main-nav a").click(function () {
+    document.getElementById("nav").checked = false;
+});

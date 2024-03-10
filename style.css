@@ -4,100 +4,60 @@
    box-sizing: border-box;
  }
 
-/* Background Component */
- .one {
-   position: relative;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   background-image: url(images/imageOne.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
- }
+/* HEADER SECTION */
+header {
+  width: 100%;
+  height: 600px;
+  background-color:  #1d1616;
+  margin: auto;
+}
 
- .footergradient {
-   width: 100%;
-   padding: 40px;
-   position: absolute;
-   bottom: 0;
-   background: linear-gradient(180deg, rgba(000, 0, 0, 0), #1d1616);
- }
-
- .footer {
-   background-color: #1d1616;
-   color: #ded9d9;
-   padding: 80px;
-   text-align: center;
-   font-family: 'Playfair Display', serif;
- }
-
- .three {
-   position: relative;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   background-image: url(images/imageTwo.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
- }
-
-#fourpara {
-  column-count: 2;
+#headerimg {
+  padding-top: 100px;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  text-align: left;
+  margin: auto;
+  width: 72%;
 }
 
- .five {
-   position: relative;
-   width: 100%;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   background-image: url(images/imageThree.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   }
-
- .upsidedownfootergradient {
-   width: 100%;
-   padding: 30px;
-   position: relative;
-   top: 0;
-   background: linear-gradient(360deg, rgba(000, 0, 0, 0), #1d1616);
- }
-
-/* Banner Component */
-h1 {
-  color: #ded9d9;
-  margin: 270px auto;
-  font-size: 80px;
-  text-align: center;
-  letter-spacing: 2px;
-  font-family: 'Playfair Display SC', serif;
+/*Background Parallax Images*/
+#imageOne {
+  background-image: url(images/imageOne.jpg);
+  background-size: 100%;
+  max-width: 100%;
+  height: 200%;
+  background-attachment: fixed;
+  position: relative;
 }
 
-/* Navigation Component */
+#imageTwo {
+  background-image: url(images/imageTwo.jpg);
+  background-size: 100%;
+  max-width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#imageThree { 
+  background-image: url(images/imageThree.jpg);
+  background-size: 100%;
+  max-width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*NAVIGATION*/
 
 nav {
   width: 100%;
-  padding: 30px 100px;
+  padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ded9d9;
   font-family: 'Roboto', sans-serif;
+
 }
 
 .home {
@@ -115,7 +75,7 @@ nav {
   color: #6a7999;
   text-decoration: none;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 1px;
   padding: 2px 15px;
   border-radius: 20px;
@@ -130,7 +90,7 @@ nav {
   margin-left: 40px;
 }
 
-.biodivercity {
+.Diversion {
   margin-left: 40px;
 }
 
@@ -169,8 +129,6 @@ nav a:hover::before {
   width: 100%;
 }
 
-/* Sticky Navigation */
-
 .sticky {
   position: fixed;
   top: 0;
@@ -178,9 +136,17 @@ nav a:hover::before {
   z-index: 1;
 }
 
+/*TEXT*/
 p {
   font-size: 27px;
   font-family: 'Roboto', sans-serif;
+  column-count: 2;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
 }
 
 h2 {
@@ -196,9 +162,49 @@ h3 {
   font-family: 'Playfair Display SC', serif;
 }
 
-#headerimg {
-  padding-top: 210px;
-  display: block;
-  margin: auto;
-  width: 72%;
+h4 {
+  font-size: 27px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  }
+
+a {
+  font-size: 27px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
+
+/*CONTENT SECTIONS*/
+section {
+  width: 100%;
+  background-color:  #1d1616;
+  margin: auto;
+  padding: 80px;
+  color: #ded9d9;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  height: auto;
+}
+
+/*GRADIENTS*/
+.gradient {
+   width: 100%;
+   padding: 40px;
+   position: absolute;
+   bottom: 0;
+   background: linear-gradient(180deg, rgba(000, 0, 0, 0), #1d1616);
+ }
+
+.upsidedowngradient {
+   width: 100%;
+   padding: 30px;
+   position: relative;
+   top: 0;
+   background: linear-gradient(360deg, rgba(000, 0, 0, 0), #1d1616);
+ }
+
+html {
+  scroll-behavior: smooth;
+}
+  
+  /*Responsive Navigation*/
