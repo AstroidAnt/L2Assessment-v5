@@ -47,93 +47,180 @@ header {
   position: relative;
 }
 
-/*NAVIGATION*/
+/*Responsive Navigation*/
 
-nav {
+.nav-bar {
   width: 100%;
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ded9d9;
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.home {
-  position: relative;
-  color: #6a7999;
-  font-size: 50px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  display: inline-block;
-}
-
-.nav  {
-  color: #6a7999;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 35px;
-  letter-spacing: 1px;
-  padding: 2px 15px;
-  border-radius: 20px;
-  transition-property: background;
-}
-
-.lakewai {
-  margin-left: 40px;
-}
-
-.about {
-  margin-left: 40px;
-}
-
-.Diversion {
-  margin-left: 40px;
-}
-
-nav a{
-  background-image: linear-gradient(to right,
-      #6a7999,
-      #6a7999 50%,
-      #151920 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-nav a:before {
-  content: '';
-  background: #6a7999;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
-
-nav a:hover {
-  background-position: 0;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
-.sticky {
   position: fixed;
+  height:auto;
+  z-index: 999;
   top: 0;
+  font-size: 18px;
+  background-color: #ded9d9;
+}
+.nav-bar li:last-child {
+  margin-right: 40px;
+
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+nav ul {
+  overflow: hidden;
+  text-align:center;
+  padding: 1%;
+  margin-left: 0;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -0-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  color: #6a7999;
+}
+
+ nav a{
+   background-image: linear-gradient(to right,
+       #6a7999,
+       #6a7999 50%,
+       #151920 50%);
+   background-size: 200% 100%;
+   background-position: -100%;
+   display: inline-block;
+   padding: 5px 0;
+   position: relative;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all 0.3s ease-in-out;
+ }
+
+ nav a:before {
+   content: '';
+   background: #6a7999;
+   display: block;
+   position: absolute;
+   bottom: -3px;
+   left: 0;
+   width: 0;
+   height: 3px;
+   transition: all 0.3s ease-in-out;
+ }
+
+ nav a:hover {
+   background-position: 0;
+ }
+
+ nav a:hover::before {
+   width: 100%;
+ }
+/* Mobile navigation */
+.mobile-icon {
   width: 100%;
-  z-index: 1;
+  text-align: right;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #6a7999;
+  display: none;
+  font-size: 20px;
+  font-family: bold;
+  margin: 2% 2%;
+  position: relative;
+  padding-left: 1.25em;
+}
+/* style of mobile icron */
+.mobile-icon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 1.2em;
+  height: 0.16em;
+  background: #6a7999;
+  box-shadow: 0 0.35em #6a7999, 0 0.7em #6a7999;
+}     
+
+/* end */
+
+@media screen and (max-width: 1300px) {
+
+    .mobile-icon {
+      display: block;
+    }
+
+    nav ul {
+      max-height: 0px;
+      padding: 0px;
+    }
+
+    /* mobile nav  */
+    .showing {
+      max-height: 20em;
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+    /* end */
+
+    .nav-bar {
+      width:100%;
+      background-color: #ded9d9;
+    }
+
+    nav ul li {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+    }
+
+   nav a{
+     background-image: linear-gradient(to right,
+         #6a7999,
+         #6a7999 50%,
+         #151920 50%);
+     background-size: 200% 100%;
+     background-position: -100%;
+     display: inline-block;
+     padding: 5px 0;
+     position: relative;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     transition: all 0.3s ease-in-out;
+   }
+
+   nav a:before {
+     content: '';
+     background: #6a7999;
+     display: block;
+     position: absolute;
+     bottom: -3px;
+     left: 0;
+     width: 0;
+     height: 3px;
+     transition: all 0.3s ease-in-out;
+   }
+
+
+   nav a:hover {
+     background-position: 0;
+   }
+
+   nav a:hover::before {
+     width: 100%;
+   }
+
+    .nav-bar {
+      display: block;
+    }
 }
 
 /*TEXT*/
@@ -207,4 +294,3 @@ html {
   scroll-behavior: smooth;
 }
   
-  /*Responsive Navigation*/
