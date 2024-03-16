@@ -19,6 +19,34 @@ header {
   width: 72%;
 }
 
+/*responsive header*/
+ #responsiveHeader {
+   display: none;
+ }
+
+@media screen and (max-width: 700px) {
+  #headerimg {
+    display: none;
+    
+  }
+  
+  #responsiveHeader {
+    display: block;
+    color: #ded9d9;
+    font-family: "Babylonica", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding-top: 60px;
+    text-align: center;
+    height: auto;
+    background-color: #1d1616;
+    width: auto;
+  }
+  
+}
+
+
 /*Background Parallax Images*/
 #imageOne {
   background-image: url(images/imageOne.jpg);
@@ -47,6 +75,14 @@ header {
   position: relative;
 }
 
+/*Responsive Background*/
+
+@media screen and (max-width: 700px) {
+  #imageOne, #imageTwo, #imageThree{
+    display: none;
+  }
+}
+
 /*Responsive Navigation*/
 
 .nav-bar {
@@ -60,7 +96,6 @@ header {
 }
 .nav-bar li:last-child {
   margin-right: 40px;
-
 }
 
 a {
@@ -76,7 +111,6 @@ nav ul {
   -webkit-transition: max-height 0.4s;
   -ms-transition: max-height 0.4s;
   -moz-transition: max-height 0.4s;
-  -0-transition: max-height 0.4s;
   transition: max-height 0.4s;
 }
 
@@ -138,7 +172,7 @@ nav ul li {
   position: relative;
   padding-left: 1.25em;
 }
-/* style of mobile icron */
+/* style of mobile icon */
 .mobile-icon:before {
   content: "";
   position: absolute;
@@ -152,7 +186,7 @@ nav ul li {
 
 /* end */
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 800px) {
 
     .mobile-icon {
       display: block;
@@ -271,6 +305,17 @@ section {
   text-align: center;
   font-family: 'Playfair Display', serif;
   height: auto;
+}
+
+/* Responsive content*/
+@media screen and (max-width: 800px) {
+  p {
+  display: block;
+  column-count: 1;
+  }
+section {
+  padding: 30px;
+}
 }
 
 /*GRADIENTS*/
